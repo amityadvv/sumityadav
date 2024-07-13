@@ -8,27 +8,33 @@
 </head>
 <body>
     <header>
-        <h1>Sumit Yadav</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>Sumit Yadav</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://www.linkedin.com/in/sumit79/" target="_blank" class="contact-btn">LinkedIn</a></li>
+                    <li><a href="mailto:sumit07521@gmail.com" class="contact-btn">Email</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="about">
+    <section id="about" class="section">
         <div class="container">
             <h2>About Me</h2>
             <p>Welcome to my portfolio! I am Sumit Yadav, an enthusiastic electrical engineer with a strong foundation in power electronics and programming.</p>
             <p>I have recently completed my B.Tech in Electrical Engineering from Gautam Buddha University, Noida, and I am actively seeking opportunities to apply my skills and contribute to innovative projects.</p>
+            <p>Connect with me on <a href="https://www.linkedin.com/in/sumit79/" target="_blank">LinkedIn</a> to learn more about my professional journey.</p>
         </div>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="section">
         <div class="container">
             <h2>Experience</h2>
             <div class="job">
@@ -49,7 +55,7 @@
         </div>
     </section>
 
-    <section id="education">
+    <section id="education" class="section">
         <div class="container">
             <h2>Education</h2>
             <h3>Gautam Buddha University</h3>
@@ -59,26 +65,42 @@
         </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="section">
         <div class="container">
             <h2>Projects</h2>
+
             <div class="project">
                 <h3>IoT Based Smart Agriculture System</h3>
-                <p>May 2022 - Jun 2023</p>
-                <p>Developed an IoT-based system to optimize agricultural practices using sensors and data analytics.</p>
+                <p>During my college years, I led a team in developing an IoT-based agriculture system aimed at revolutionizing traditional farming methods.</p>
+                <p>The primary objective was to enhance efficiency, productivity, and sustainability in agriculture through the integration of IoT components such as sensors, actuators, and connectivity.</p>
+                <ul>
+                    <li>Designed a modular system adaptable to various crop types, growth stages, and environmental conditions.</li>
+                    <li>Implemented a network of sensors to collect real-time data on temperature, humidity, soil moisture, and light levels.</li>
+                    <li>Utilized IoT protocols to transmit data to a central hub for analysis and decision-making.</li>
+                    <li>Developed intelligent algorithms for automated irrigation based on soil moisture levels, reducing water waste and ensuring precise watering.</li>
+                    <li>Conducted extensive field trials with local farmers to validate system effectiveness, resulting in increased crop yields and improved resource management.</li>
+                </ul>
+                <p>This project demonstrated the transformative potential of IoT and data analytics in modernizing agriculture practices, providing farmers with actionable insights and predictive capabilities for sustainable farming.</p>
             </div>
+
+            <!-- Add more projects as needed -->
+
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="section">
         <div class="container">
             <h2>Contact</h2>
-            <p>Feel free to reach out to me via email at <a href="mailto:sumityadav@example.com">sumityadav@example.com</a>.</p>
+            <p>Feel free to connect with me via email at <a href="mailto:sumit07521@gmail.com">sumit07521@gmail.com</a>.</p>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Sumit Yadav. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Sumit Yadav. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
