@@ -1,28 +1,184 @@
-/* Add the previous styles here if they were cut off */
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f3f2ef; /* Light background */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #0077B5; /* LinkedIn's blue */
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 4px solid #fff; /* White border around the profile picture */
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #005580; /* Darker shade on hover */
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section:nth-child(even) {
+    background-color: #fff; /* Alternate background color */
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.job {
+    margin-bottom: 30px;
+}
+
+.job h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
 
 .project {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.project ul {
+    margin-left: 20px;
+}
+
+.project ul li {
+    list-style-type: disc;
+    margin-bottom: 8px;
 }
 
 .contact-btn {
     background-color: #0077B5; /* LinkedIn's blue */
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border-radius: 5px;
     text-decoration: none;
     margin-left: 10px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
 }
 
 .contact-btn:hover {
-    background-color: #005580; /* Darker shade of LinkedIn's blue */
+    background-color: #005580; /* Darker shade on hover */
 }
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
+    padding: 20px 0;
+    position: relative;
     bottom: 0;
     width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .section {
+        padding: 40px 0;
+    }
+
+    .project {
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
 }
